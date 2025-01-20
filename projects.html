@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Links -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume/resume.pdf" download>Download Resume</a>
+  </nav>
+  </nav>
+
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Project 1: Student Management System</h3>
+      <p><strong>Overview:</strong> A comprehensive student management system designed for educational institutions. It streamlines registration, data management, and statistical analysis.</p>
+      <ul>
+        <li><strong>Key Features:</strong></li>
+        <li>Student Registration: Add, remove, and update student records.</li>
+        <li>Dynamic Statistics Panel: Compare courses and enrollment years with charts.</li>
+        <li>Data Visualization: Intuitive bar and pie charts using JFreeChart.</li>
+        <li>Database Integration: Secure storage with MySQL.</li>
+      </ul>
+      <button class="read-more-btn" onclick="toggleDetails('project1-details')">Read More</button>
+      <div id="project1-details" class="hidden">
+        <p><strong>Technologies Used:</strong> Java (Swing), MySQL, JFreeChart, Maven.</p>
+        <p><strong>Learning Outcomes:</strong> Mastered pagination, chart creation, and database management.</p>
+        <p><strong>Next Steps:</strong> Role-based access control, multi-language support, and web deployment.</p>
+      </div>
+      <a href="https://github.com/Marcus078/StudentManagerApp.git" target="_blank">View on GitHub</a>
+    </div>
+  
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>Project 2: Finance App</h3>
+      <p><strong>Overview:</strong> A console-based finance management system for personal and account-related financial operations.</p>
+      <ul>
+        <li><strong>Key Features:</strong></li>
+        <li>Account Management: Manage Current and Savings Accounts.</li>
+        <li>Transactions: Deposit, withdraw, transfer, and apply interest automatically.</li>
+        <li>Transaction History: View detailed logs.</li>
+        <li>Menu Navigation: User-friendly, intuitive interface.</li>
+      </ul>
+      <button class="read-more-btn" onclick="toggleDetails('project2-details')">Read More</button>
+      <div id="project2-details" class="hidden">
+        <p><strong>Technologies Used:</strong> C#, OOP, input validation, dynamic menus.</p>
+        <p><strong>Learning Outcomes:</strong> Enhanced skills in secure input handling and transaction management.</p>
+        <p><strong>Next Steps:</strong> Database integration, authentication, and reporting features.</p>
+      </div>
+      <a href="https://github.com/Marcus078/FinanceManagement.git" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+
+  <div class="projects-container">
+    <!-- Project 3 -->
+    <div class="project-card">
+      <h3>Project 3: Cafeteria Ordering App</h3>
+      <p><strong>Overview:</strong> A mobile app built to simplify cafeteria orders, minimize waiting times, and enhance the ordering experience for students.</p>
+      <ul>
+        <li><strong>Key Features:</strong></li>
+        <li>Place Orders: Add food items to the cart with real-time updates.</li>
+        <li>Cart Management: Swipe left to delete items.</li>
+        <li>Order Status: Pop-up timer notifies when orders are ready.</li>
+        <li>Recent Orders: Tracks past orders with their respective dates.</li>
+        <li>Firebase Integration: Stores user details, order history, and authentication data securely.</li>
+      </ul>
+      <button class="read-more-btn" onclick="toggleDetails('project3-details')">Read More</button>
+      <div id="project3-details" class="hidden">
+        <p><strong>Technologies Used:</strong> Kotlin, Android Studio, Firebase.</p>
+        <p><strong>Learning Outcomes:</strong> Enhanced skills in Firebase authentication and database integration, swipe gestures, and dynamic UI updates.</p>
+        <p><strong>Next Steps:</strong> Add payment gateway integration and a notification system for special offers.</p>
+      </div>
+      <a href="https://github.com/Marcus078/Cho-VondokacafeteriaApp.git" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <h3>Project 4: Mobile Finance App</h3>
+      <p><strong>Overview:</strong> A Kotlin-based finance management app that provides users with essential tools to manage their finances effectively.</p>
+      <ul>
+        <li><strong>Key Features:</strong></li>
+        <li>Account Management: Register and log in securely.</li>
+        <li>Transactions: Deposit, withdraw, transfer funds, and verify account numbers.</li>
+        <li>Transaction History: View detailed logs of all past transactions.</li>
+        <li>Balance Inquiry: Check account balance instantly.</li>
+        <li>SharedPreferences: Persistent storage for user data and financial information.</li>
+      </ul>
+      <button class="read-more-btn" onclick="toggleDetails('project4-details')">Read More</button>
+      <div id="project4-details" class="hidden">
+        <p><strong>Technologies Used:</strong> Kotlin, IntelliJ IDEA, SharedPreferences.</p>
+        <p><strong>Learning Outcomes:</strong> Improved proficiency in persistent data storage, secure user authentication, and object-oriented design in Kotlin.</p>
+        <p><strong>Next Steps:</strong> Include data encryption for added security and integrate cloud storage for seamless multi-device support.</p>
+      </div>
+      <a href="https://github.com/Marcus078/MyFinanceApp.git" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails(id) {
+      const details = document.getElementById(id);
+      if (details.classList.contains('hidden')) {
+        details.classList.remove('hidden');
+      } else {
+        details.classList.add('hidden');
+      }
+    }
+  </script>
+
+</body>   
+</html>
